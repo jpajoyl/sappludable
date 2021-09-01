@@ -30,7 +30,7 @@
       />
 
       <!-- Dropdown Content -->
-      <li style="min-width:300px">
+<!--      <li style="min-width:300px">
         <div class="p-1">
           <b-form-input
             id="boomark-search-input"
@@ -75,7 +75,7 @@
           >
             No Results Found.
           </b-dropdown-item></vue-perfect-scrollbar>
-      </li>
+      </li>-->
     </b-nav-item-dropdown>
 
   </b-navbar-nav>
@@ -83,9 +83,9 @@
 
 <script>
 import {
-  BNavbarNav, BNavItem, BTooltip, BNavItemDropdown, BFormInput, BDropdownItem,
+  BNavbarNav, BNavItem, BTooltip, BNavItemDropdown,
 } from 'bootstrap-vue'
-import VuePerfectScrollbar from 'vue-perfect-scrollbar'
+// import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import useAutoSuggest from '@core/components/app-auto-suggest/useAutoSuggest'
 import { ref, watch } from '@vue/composition-api'
 import router from '@/router'
@@ -94,7 +94,7 @@ import searchAndBookmarkData from '../search-and-bookmark-data'
 
 export default {
   components: {
-    BNavbarNav, BNavItem, BTooltip, BNavItemDropdown, BFormInput, VuePerfectScrollbar, BDropdownItem,
+    BNavbarNav, BNavItem, BTooltip, BNavItemDropdown,
   },
   setup() {
     const searchAndBookmarkDataPages = ref(searchAndBookmarkData.pages)
