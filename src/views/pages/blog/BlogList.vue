@@ -40,7 +40,7 @@
                 />
               </b-media-aside>
               <b-media-body>
-                <small class="text-muted mr-50">by</small>
+                <small class="text-muted mr-50">por</small>
                 <small>
                   <b-link class="text-body">{{ blog.userFullName }}</b-link>
                 </small>
@@ -73,14 +73,14 @@
                     icon="MessageSquareIcon"
                     class="mr-50"
                   />
-                  <span class="font-weight-bold">{{ kFormatter(blog.comment) }} Comments</span>
+                  <span class="font-weight-bold">{{ kFormatter(blog.comment) }} Comentarios</span>
                 </div>
               </b-link>
               <b-link
                 :to="{ name: 'pages-blog-detail', params: { id: blog.id } }"
                 class="font-weight-bold"
               >
-                Read More
+                Ver más
               </b-link>
             </div>
           </b-card-body>
@@ -128,7 +128,7 @@
           <b-form-input
             id="search-input"
             v-model="search_query"
-            placeholder="Search here"
+            placeholder="Buscar"
           />
           <b-input-group-append
             class="cursor-pointer"
@@ -145,7 +145,7 @@
       <!-- recent posts -->
       <div class="blog-recent-posts mt-3">
         <h6 class="section-label mb-75">
-          Recent Posts
+          Más recientes
         </h6>
         <b-media
           v-for="(recentpost,index) in blogSidebar.recentPosts"
@@ -184,7 +184,7 @@
       <!-- categories -->
       <div class="blog-categories mt-3">
         <h6 class="section-label mb-1">
-          Categories
+          Categorías
         </h6>
 
         <div

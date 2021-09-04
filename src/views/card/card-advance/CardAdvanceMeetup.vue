@@ -15,18 +15,18 @@
       <div class="meetup-header d-flex align-items-center">
         <div class="meetup-day">
           <h6 class="mb-0">
-            THU
+            JUE
           </h6>
           <h3 class="mb-0">
-            24
+            23
           </h3>
         </div>
         <div class="my-auto">
           <b-card-title class="mb-25">
-            Developer Meetup
+            Cita psicología
           </b-card-title>
           <b-card-text class="mb-0">
-            Meet world popular developers
+            Profesional: Andrea Gutierrez
           </b-card-text>
         </div>
       </div>
@@ -71,7 +71,7 @@
           class="pull-up"
         />
         <h6 class="align-self-center cursor-pointer ml-1 mb-0">
-          +42
+          Psicólog@
         </h6>
       </b-avatar-group>
 
@@ -103,15 +103,11 @@ export default {
   data() {
     return {
       mediaData: [
-        { avatar: 'CalendarIcon', title: 'Sat, May 25, 2020', subtitle: '10:AM to 6:PM' },
-        { avatar: 'MapPinIcon', title: 'Central Park', subtitle: 'Manhattan, New york City' },
+        { avatar: 'CalendarIcon', title: 'Jue, Sep 23, 2021', subtitle: '10:00AM to 11:00PM' },
+        { avatar: 'GoogleIcon', title: 'Cita virtual', subtitle: 'Google meet' },
       ],
       avatars: [
-        { avatar: require('@/assets/images/portrait/small/avatar-s-9.jpg'), fullName: 'Billy Hopkins' },
-        { avatar: require('@/assets/images/portrait/small/avatar-s-6.jpg'), fullName: 'Amy Carson' },
-        { avatar: require('@/assets/images/portrait/small/avatar-s-8.jpg'), fullName: 'Brandon Miles' },
-        { avatar: require('@/assets/images/portrait/small/avatar-s-7.jpg'), fullName: 'Daisy Weber' },
-        { avatar: require('@/assets/images/portrait/small/avatar-s-20.jpg'), fullName: 'Jenny Looper' },
+        { avatar: require('@/assets/images/portrait/small/avatar-s-6.jpg'), fullName: 'Andrea Gutierrez' },
       ],
     }
   },

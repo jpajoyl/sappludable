@@ -24,7 +24,7 @@
           class="mb-75 mr-75"
           @click="$refs.refInputEl.$el.click()"
         >
-          Upload
+          Subir imagen
         </b-button>
         <b-form-file
           ref="refInputEl"
@@ -37,16 +37,16 @@
         <!--/ upload button -->
 
         <!-- reset -->
-        <b-button
+<!--        <b-button
           v-ripple.400="'rgba(186, 191, 199, 0.15)'"
           variant="outline-secondary"
           size="sm"
           class="mb-75 mr-75"
         >
           Reset
-        </b-button>
+        </b-button>-->
         <!--/ reset -->
-        <b-card-text>Allowed JPG, GIF or PNG. Max size of 800kB</b-card-text>
+        <b-card-text>Sólo formatos JPG, GIF o PNG</b-card-text>
       </b-media-body>
     </b-media>
     <!--/ media -->
@@ -56,25 +56,25 @@
       <b-row>
         <b-col sm="6">
           <b-form-group
-            label="Username"
+            label="Nombre de usuario"
             label-for="account-username"
           >
             <b-form-input
               v-model="optionsLocal.username"
-              placeholder="Username"
+              placeholder="Nombre de usuario"
               name="username"
             />
           </b-form-group>
         </b-col>
         <b-col sm="6">
           <b-form-group
-            label="Name"
+            label="Nombre"
             label-for="account-name"
           >
             <b-form-input
               v-model="optionsLocal.fullName"
               name="name"
-              placeholder="Name"
+              placeholder="Nombre"
             />
           </b-form-group>
         </b-col>
@@ -93,13 +93,14 @@
         </b-col>
         <b-col sm="6">
           <b-form-group
-            label="Company"
+            label="Empresa"
             label-for="account-company"
           >
             <b-form-input
               v-model="optionsLocal.company"
               name="company"
-              placeholder="Company name"
+              placeholder="Empresa"
+              disabled="true"
             />
           </b-form-group>
         </b-col>
@@ -115,11 +116,11 @@
             class="mb-50"
           >
             <h4 class="alert-heading">
-              Your email is not confirmed. Please check your inbox.
+              Tu email aún no esta confirmado, revisa tu bandeja de entrada
             </h4>
             <div class="alert-body">
               <b-link class="alert-link">
-                Resend confirmation
+                Reenviar email
               </b-link>
             </div>
           </b-alert>
@@ -132,7 +133,7 @@
             variant="primary"
             class="mt-2 mr-1"
           >
-            Save changes
+            Guardar
           </b-button>
           <b-button
             v-ripple.400="'rgba(186, 191, 199, 0.15)'"
@@ -141,7 +142,7 @@
             class="mt-2"
             @click.prevent="resetForm"
           >
-            Reset
+            Limpiar
           </b-button>
         </b-col>
       </b-row>

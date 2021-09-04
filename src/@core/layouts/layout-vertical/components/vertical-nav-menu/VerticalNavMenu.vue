@@ -159,4 +159,8 @@ export default {
 
 <style lang="scss">
 @import "~@core/scss/base/core/menu/menu-types/vertical-menu.scss";
+.brand-text{
+  color: red !important;
+  font-family: pacifico,serif;
+}
 </style>

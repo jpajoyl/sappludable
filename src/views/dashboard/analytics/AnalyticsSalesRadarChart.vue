@@ -5,9 +5,9 @@
   >
     <b-card-header class="align-items-baseline">
       <div>
-        <b-card-title>Sales</b-card-title>
+        <b-card-title>Modelo circumplejo</b-card-title>
         <b-card-text class="mb-0">
-          Last 6 months
+          Últimos 6 meses
         </b-card-text>
       </div>
       <b-dropdown
@@ -25,13 +25,13 @@
           />
         </template>
         <b-dropdown-item href="#">
-          Last 28 Days
+          Últimos 28 dias
         </b-dropdown-item>
         <b-dropdown-item href="#">
-          Last Month
+          Mes anterior
         </b-dropdown-item>
         <b-dropdown-item href="#">
-          Last Year
+          Año anterior
         </b-dropdown-item>
       </b-dropdown>
     </b-card-header>
@@ -42,14 +42,7 @@
           icon="CircleIcon"
           class="text-primary mr-50"
         />
-        <span>Sales</span>
-      </div>
-      <div class="d-inline-flex align-items-center">
-        <feather-icon
-          icon="CircleIcon"
-          class="text-info mr-50"
-        />
-        <span>Visits</span>
+        <span>Modelo circumplejo</span>
       </div>
 
       <!-- apex chart -->
@@ -136,7 +129,7 @@ export default {
               stops: [0, 100, 100, 100],
             },
           },
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          labels: ['Tensión', 'Exitación', 'Satisfacción', 'Relajación', 'Depresión', 'Angustia'],
           markers: {
             size: 0,
           },

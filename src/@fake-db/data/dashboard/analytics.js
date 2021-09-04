@@ -3,17 +3,17 @@ import mock from '@/@fake-db/mock'
 const data = {
   congratulations: {
     name: 'John',
-    saleToday: '57.6',
+    saleToday: '7',
   },
   subscribersGained: {
     series: [
       {
-        name: 'Subscribers',
-        data: [28, 40, 36, 52, 38, 60, 55],
+        name: 'Puntos',
+        data: [12, 20, 15, 30, 20, 15, 15],
       },
     ],
     analyticsData: {
-      subscribers: 92600,
+      subscribers: 127,
     },
   },
   ordersRecevied: {
@@ -94,10 +94,6 @@ const data = {
       {
         name: 'Sales',
         data: [90, 50, 86, 40, 100, 20],
-      },
-      {
-        name: 'Visit',
-        data: [70, 75, 70, 76, 20, 85],
       },
     ],
   },

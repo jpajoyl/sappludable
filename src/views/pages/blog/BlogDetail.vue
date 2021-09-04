@@ -27,7 +27,7 @@
                 />
               </b-media-aside>
               <b-media-body>
-                <small class="text-muted mr-50">by</small>
+                <small class="text-muted mr-50">por</small>
                 <small>
                   <b-link class="text-body">{{ blogDetail.blog.userFullName }}</b-link>
                 </small>
@@ -48,7 +48,11 @@
                   {{ tag }}
                 </b-badge>
               </b-link>
+
             </div>
+            <b-button variant="relief-success" style="margin-bottom: 15px">
+              Ir al juego!
+            </b-button>
             <!-- eslint-disable vue/no-v-html -->
             <div
               class="blog-content"
@@ -151,7 +155,7 @@
           class="mt-2"
         >
           <h6 class="section-label">
-            Comment
+            Comentarios
           </h6>
           <b-card
             v-for="(comment,index) in blogDetail.comments"
@@ -179,7 +183,7 @@
                       size="18"
                       class="mr-50"
                     />
-                    <span>Reply</span>
+                    <span>Responder</span>
                   </div>
                 </b-link>
               </b-media-body>
@@ -194,7 +198,7 @@
           class="mt-2"
         >
           <h6 class="section-label">
-            Leave a Comment
+            Escribe un comentario
           </h6>
           <b-card>
             <b-form>
@@ -203,7 +207,7 @@
                   <b-form-group class="mb-2">
                     <b-form-input
                       name="name"
-                      placeholder="Name"
+                      placeholder="Nombre"
                     />
                   </b-form-group>
                 </b-col>
@@ -220,7 +224,7 @@
                   <b-form-group class="mb-2">
                     <b-form-input
                       name="website"
-                      placeholder="Website"
+                      placeholder="Sitio web"
                     />
                   </b-form-group>
                 </b-col>
@@ -229,7 +233,7 @@
                     <b-form-textarea
                       name="textarea"
                       rows="4"
-                      placeholder="Website"
+                      placeholder="Comentario"
                     />
                   </b-form-group>
                 </b-col>
@@ -240,7 +244,7 @@
                     name="checkbox-1"
                     class="mb-2"
                   >
-                    Save my name, email, and website in this browser for the next time I comment.
+                    Guardar mis datos para el proximo comentario
                   </b-form-checkbox>
                 </b-col>
                 <b-col cols="12">
@@ -248,7 +252,7 @@
                     v-ripple.400="'rgba(255, 255, 255, 0.15)'"
                     variant="primary"
                   >
-                    Post Comment
+                    Enviar comentario
                   </b-button>
                 </b-col>
               </b-row>
@@ -289,7 +293,7 @@
       <!-- recent posts -->
       <div class="blog-recent-posts mt-3">
         <h6 class="section-label mb-75">
-          Recent Posts
+          Post recientes
         </h6>
         <b-media
           v-for="(recentpost,index) in blogSidebar.recentPosts"
@@ -325,7 +329,7 @@
       <!-- categories -->
       <div class="blog-categories mt-3">
         <h6 class="section-label mb-1">
-          Categories
+          Categorias
         </h6>
 
         <div

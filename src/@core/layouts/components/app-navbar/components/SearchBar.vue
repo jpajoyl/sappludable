@@ -27,7 +27,7 @@
       <b-form-input
         v-if="showSearchBar"
         v-model="searchQuery"
-        placeholder="Explore Vuexy"
+        placeholder="Buscar en Sappludable"
         autofocus
         autocomplete="off"
         @keyup.up="increaseIndex(false)"

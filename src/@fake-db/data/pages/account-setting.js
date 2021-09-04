@@ -6,15 +6,15 @@ const data = {
       avatar: require('@/assets/images/portrait/small/avatar-s-11.jpg'),
       username: 'johndoe',
       fullName: 'John Doe',
-      email: 'granger007@hogward.com',
-      company: 'Crystal Technologies',
+      email: 'admin@demo.com',
+      company: 'Sappludable S.A.S',
     },
     info: {
       bio: '',
       dob: null,
-      country: 'USA',
+      country: 'Colombia',
       website: '',
-      phone: 6562542568,
+      phone: 3172563967,
     },
     social: {
       socialLinks: {

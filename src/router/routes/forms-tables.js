@@ -140,16 +140,7 @@ export default [
     name: 'forms-element-rating',
     component: () => import('@/views/forms/form-element/form-rating/FormRating.vue'),
     meta: {
-      pageTitle: 'Form Rating',
-      breadcrumb: [
-        {
-          text: 'Form Elements',
-        },
-        {
-          text: 'Form Rating',
-          active: true,
-        },
-      ],
+      pageTitle: 'Escala de Hamilton',
     },
   },
   {

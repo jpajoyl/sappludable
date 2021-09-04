@@ -1,7 +1,7 @@
 import mock from '@/@fake-db/mock'
 
 const date = new Date()
-const nextDay = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+// const nextDay = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
 // prettier-ignore
 const nextMonth = date.getMonth() === 11 ? new Date(date.getFullYear() + 1, 0, 1) : new Date(date.getFullYear(), date.getMonth() + 1, 1)
 // prettier-ignore
@@ -12,34 +12,34 @@ const data = {
     {
       id: 1,
       url: '',
-      title: 'Design Review',
+      title: 'Cita con nutricionista',
       start: date,
-      end: nextDay,
+      end: date,
       allDay: false,
       extendedProps: {
-        calendar: 'Business',
+        calendar: 'Nutrición',
       },
     },
     {
       id: 2,
       url: '',
-      title: 'Meeting With Client',
+      title: 'Clase de finanzas personales',
       start: new Date(date.getFullYear(), date.getMonth() + 1, -11),
       end: new Date(date.getFullYear(), date.getMonth() + 1, -10),
-      allDay: true,
+      allDay: false,
       extendedProps: {
-        calendar: 'Business',
+        calendar: 'Finanzas',
       },
     },
     {
       id: 3,
       url: '',
-      title: 'Family Trip',
-      allDay: true,
+      title: 'Cita con psicologa',
+      allDay: false,
       start: new Date(date.getFullYear(), date.getMonth() + 1, -9),
-      end: new Date(date.getFullYear(), date.getMonth() + 1, -7),
+      end: new Date(date.getFullYear(), date.getMonth() + 1, -8),
       extendedProps: {
-        calendar: 'Holiday',
+        calendar: 'Psicología',
       },
     },
     {

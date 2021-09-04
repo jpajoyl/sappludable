@@ -48,7 +48,7 @@
               </b-input-group-prepend>
               <b-form-input
                 v-model="searchQuery"
-                placeholder="Search..."
+                placeholder="Buscar..."
               />
             </b-input-group>
           </div>
@@ -80,7 +80,7 @@
 
           <!-- Contacts Title -->
           <h4 class="chat-list-title">
-            Contacts
+            Contactos
           </h4>
 
           <!-- Contacts -->

@@ -6,7 +6,7 @@
   >
     <template #button-content>
       <feather-icon
-        badge="6"
+        :badge="notifications.length"
         badge-classes="bg-danger"
         class="text-body"
         icon="BellIcon"
@@ -18,13 +18,13 @@
     <li class="dropdown-menu-header">
       <div class="dropdown-header d-flex">
         <h4 class="notification-title mb-0 mr-auto">
-          Notifications
+          Notificaciones
         </h4>
         <b-badge
           pill
           variant="light-primary"
         >
-          6 New
+         {{notifications.length}} nuevas
         </b-badge>
       </div>
     </li>
@@ -60,7 +60,7 @@
       </b-link>
 
       <!-- System Notification Toggler -->
-      <div class="media d-flex align-items-center">
+<!--      <div class="media d-flex align-items-center">
         <h6 class="font-weight-bolder mr-auto mb-0">
           System Notifications
         </h6>
@@ -70,12 +70,12 @@
         />
       </div>
 
-      <!-- System Notifications -->
+      &lt;!&ndash; System Notifications &ndash;&gt;
       <b-link
         v-for="notification in systemNotifications"
         :key="notification.subtitle"
-      >
-        <b-media>
+      >-->
+<!--        <b-media>
           <template #aside>
             <b-avatar
               size="32"
@@ -91,7 +91,7 @@
           </p>
           <small class="notification-text">{{ notification.subtitle }}</small>
         </b-media>
-      </b-link>
+      </b-link>-->
     </vue-perfect-scrollbar>
 
     <!-- Cart Footer -->
@@ -99,14 +99,14 @@
       v-ripple.400="'rgba(255, 255, 255, 0.15)'"
       variant="primary"
       block
-    >Read all notifications</b-button>
+    >Marcar como leidas todas las notificaciones</b-button>
     </li>
   </b-nav-item-dropdown>
 </template>
 
 <script>
 import {
-  BNavItemDropdown, BBadge, BMedia, BLink, BAvatar, BButton, BFormCheckbox,
+  BNavItemDropdown, BBadge, BMedia, BLink, BAvatar, BButton,
 } from 'bootstrap-vue'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import Ripple from 'vue-ripple-directive'
@@ -120,7 +120,6 @@ export default {
     BAvatar,
     VuePerfectScrollbar,
     BButton,
-    BFormCheckbox,
   },
   directives: {
     Ripple,
@@ -129,22 +128,16 @@ export default {
     /* eslint-disable global-require */
     const notifications = [
       {
-        title: 'Congratulation Sam 🎉',
-        avatar: require('@/assets/images/avatars/6-small.png'),
-        subtitle: 'Won the monthly best seller badge',
+        title: 'Felicitaciones 🎉',
+        avatar: require('@/assets/images/avatars/13-small.png'),
+        subtitle: 'Has ganado 3 puntos más',
         type: 'light-success',
       },
       {
-        title: 'New message received',
-        avatar: require('@/assets/images/avatars/9-small.png'),
-        subtitle: 'You have 10 unread messages',
+        title: 'Tienes una cita agendada para mañana',
+        avatar: require('@/assets/images/icons/book.svg'),
+        subtitle: 'Revisa el calendario',
         type: 'light-info',
-      },
-      {
-        title: 'Revised Order 👋',
-        avatar: 'MD',
-        subtitle: 'MD Inc. order updated',
-        type: 'light-danger',
       },
     ]
     /* eslint-disable global-require */

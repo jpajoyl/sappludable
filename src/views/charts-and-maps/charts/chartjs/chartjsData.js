@@ -21,10 +21,10 @@ const chartColors = {
 export default {
   latestBarChart: {
     data: {
-      labels: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12', '13/12', '14/12', '15/12', '16/12', '17/12'],
+      labels: ['SA', 'AL', 'AM', 'AG', 'DP', 'DnP', 'N', 'SP', 'Det', 'Dem', 'Term'],
       datasets: [
         {
-          data: [275, 90, 190, 205, 125, 85, 55, 87, 127, 150, 230, 280, 190],
+          data: [28.57, 42.86, 8.57, 20, 77.14, 22.86, 43.24, 25.71, 22.86, 5.71, 0],
           backgroundColor: chartColors.successColorShade,
           borderColor: 'transparent',
         },
@@ -78,9 +78,9 @@ export default {
               zeroLineColor: chartColors.grid_line_color,
             },
             ticks: {
-              stepSize: 100,
+              stepSize: 10,
               min: 0,
-              max: 400,
+              max: 100,
               fontColor: chartColors.labelColor,
             },
           },

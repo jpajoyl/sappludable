@@ -51,16 +51,6 @@
         right
       >
 
-        <template #button-content>
-          <b-button
-            v-ripple.400="'rgba(255, 255, 255, 0.15)'"
-            variant="primary"
-            class="btn-icon"
-          >
-            <feather-icon icon="SettingsIcon" />
-          </b-button>
-        </template>
-
         <b-dropdown-item :to="{ name: 'apps-todo' }">
           <feather-icon
             icon="CheckSquareIcon"
@@ -77,13 +67,13 @@
           <span class="align-middle ml-50">Chat</span>
         </b-dropdown-item>
 
-        <b-dropdown-item :to="{ name: 'apps-email' }">
+<!--        <b-dropdown-item :to="{ name: 'apps-email' }">
           <feather-icon
             icon="MailIcon"
             size="16"
           />
           <span class="align-middle ml-50">Email</span>
-        </b-dropdown-item>
+        </b-dropdown-item>-->
 
         <b-dropdown-item :to="{ name: 'apps-calendar' }">
           <feather-icon
@@ -99,7 +89,7 @@
 
 <script>
 import {
-  BBreadcrumb, BBreadcrumbItem, BRow, BCol, BDropdown, BDropdownItem, BButton,
+  BBreadcrumb, BBreadcrumbItem, BRow, BCol, BDropdown, BDropdownItem,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
 
@@ -114,7 +104,6 @@ export default {
     BCol,
     BDropdown,
     BDropdownItem,
-    BButton,
   },
 }
 </script>

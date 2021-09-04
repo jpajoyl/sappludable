@@ -1,7 +1,7 @@
 <template>
   <b-card no-body>
     <b-card-header>
-      <b-card-title>Latest Statistics</b-card-title>
+      <b-card-title>Valoracion del estado mental</b-card-title>
       <!-- datepicker -->
       <div class="d-flex align-items-center">
         <feather-icon
@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       chartjsData,
-      rangePicker: ['2019-05-01', '2019-05-10'],
+      rangePicker: ['2021-08-01', '2021-08-31'],
     }
   },
 }

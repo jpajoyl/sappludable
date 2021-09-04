@@ -142,7 +142,7 @@ export default [
     name: 'pages-account-setting',
     component: () => import('@/views/pages/account-setting/AccountSetting.vue'),
     meta: {
-      pageTitle: 'Account Settings',
+      /*      pageTitle: 'Account Settings',
       breadcrumb: [
         {
           text: 'Pages',
@@ -151,7 +151,7 @@ export default [
           text: 'Account Settings',
           active: true,
         },
-      ],
+      ], */
     },
   },
   {
@@ -264,7 +264,7 @@ export default [
     name: 'pages-blog-list',
     component: () => import('@/views/pages/blog/BlogList.vue'),
     meta: {
-      pageTitle: 'Blog List',
+      /*      pageTitle: 'Blog List',
       breadcrumb: [
         {
           text: 'Pages',
@@ -276,7 +276,7 @@ export default [
           text: 'List',
           active: true,
         },
-      ],
+      ], */
     },
   },
   {
@@ -284,19 +284,6 @@ export default [
     name: 'pages-blog-detail',
     component: () => import('@/views/pages/blog/BlogDetail.vue'),
     meta: {
-      pageTitle: 'Blog Detail',
-      breadcrumb: [
-        {
-          text: 'Pages',
-        },
-        {
-          text: 'Blog',
-        },
-        {
-          text: 'Detail',
-          active: true,
-        },
-      ],
     },
   },
   {

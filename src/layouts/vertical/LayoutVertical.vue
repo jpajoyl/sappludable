@@ -14,7 +14,7 @@
 <script>
 import LayoutVertical from '@core/layouts/layout-vertical/LayoutVertical.vue'
 import AppCustomizer from '@core/layouts/components/app-customizer/AppCustomizer.vue'
-import { $themeConfig } from '@themeConfig'
+// import { $themeConfig } from '@themeConfig'
 
 export default {
   components: {
@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      showCustomizer: $themeConfig.layout.customizer,
+      showCustomizer: false,
     }
   },
 }

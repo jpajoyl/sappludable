@@ -28,7 +28,7 @@
     </template>
 
     <b-dropdown-item
-      :to="{ name: 'pages-profile'}"
+      :to="{ name: 'pages-account-setting'}"
       link-class="d-flex align-items-center"
     >
       <feather-icon
@@ -36,9 +36,9 @@
         icon="UserIcon"
         class="mr-50"
       />
-      <span>Profile</span>
+      <span>Perfil</span>
     </b-dropdown-item>
-    <b-dropdown-item
+<!--    <b-dropdown-item
       :to="{ name: 'apps-email' }"
       link-class="d-flex align-items-center"
     >
@@ -48,18 +48,7 @@
         class="mr-50"
       />
       <span>Inbox</span>
-    </b-dropdown-item>
-    <b-dropdown-item
-      :to="{ name: 'apps-todo' }"
-      link-class="d-flex align-items-center"
-    >
-      <feather-icon
-        size="16"
-        icon="CheckSquareIcon"
-        class="mr-50"
-      />
-      <span>Task</span>
-    </b-dropdown-item>
+    </b-dropdown-item>-->
     <b-dropdown-item
       :to="{ name: 'apps-chat' }"
       link-class="d-flex align-items-center"
@@ -75,39 +64,6 @@
     <b-dropdown-divider />
 
     <b-dropdown-item
-      :to="{ name: 'pages-account-setting' }"
-      link-class="d-flex align-items-center"
-    >
-      <feather-icon
-        size="16"
-        icon="SettingsIcon"
-        class="mr-50"
-      />
-      <span>Settings</span>
-    </b-dropdown-item>
-    <b-dropdown-item
-      :to="{ name: 'pages-pricing' }"
-      link-class="d-flex align-items-center"
-    >
-      <feather-icon
-        size="16"
-        icon="CreditCardIcon"
-        class="mr-50"
-      />
-      <span>Pricing</span>
-    </b-dropdown-item>
-    <b-dropdown-item
-      :to="{ name: 'pages-faq' }"
-      link-class="d-flex align-items-center"
-    >
-      <feather-icon
-        size="16"
-        icon="HelpCircleIcon"
-        class="mr-50"
-      />
-      <span>FAQ</span>
-    </b-dropdown-item>
-    <b-dropdown-item
       link-class="d-flex align-items-center"
       @click="logout"
     >
@@ -116,7 +72,7 @@
         icon="LogOutIcon"
         class="mr-50"
       />
-      <span>Logout</span>
+      <span>Cerrar sesión</span>
     </b-dropdown-item></b-nav-item-dropdown>
 </template>
 

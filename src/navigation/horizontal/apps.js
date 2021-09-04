@@ -4,11 +4,6 @@ export default [
     icon: 'PackageIcon',
     children: [
       {
-        title: 'Email',
-        route: 'apps-email',
-        icon: 'MailIcon',
-      },
-      {
         title: 'Chat',
         route: 'apps-chat',
         icon: 'MessageSquareIcon',

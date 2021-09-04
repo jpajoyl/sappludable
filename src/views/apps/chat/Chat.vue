@@ -25,7 +25,7 @@
           class="sidebar-toggle start-chat-text"
           @click="startConversation"
         >
-          Start Conversation
+          Empezar conversación
         </h4>
       </div>
 
@@ -96,19 +96,19 @@
                     />
                   </template>
                   <b-dropdown-item>
-                    View Contact
+                    Ver contacto
                   </b-dropdown-item>
                   <b-dropdown-item>
-                    Mute Notifications
+                    Silenciar notificaciones
                   </b-dropdown-item>
                   <b-dropdown-item>
-                    Block Contact
+                    Bloquear contacto
                   </b-dropdown-item>
                   <b-dropdown-item>
-                    Clear Chat
+                    Limpiar chat
                   </b-dropdown-item>
                   <b-dropdown-item>
-                    Report
+                    Reportar
                   </b-dropdown-item>
                 </b-dropdown>
               </div>
@@ -136,14 +136,14 @@
           <b-input-group class="input-group-merge form-send-message mr-1">
             <b-form-input
               v-model="chatInputMessage"
-              placeholder="Enter your message"
+              placeholder="Escribe el mensaje"
             />
           </b-input-group>
           <b-button
             variant="primary"
             type="submit"
           >
-            Send
+            Enviar
           </b-button>
         </b-form>
       </div>

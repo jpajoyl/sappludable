@@ -6,26 +6,18 @@ export default {
     calendarOptions: [
       {
         color: 'danger',
-        label: 'Personal',
+        label: 'Psicología',
       },
       {
         color: 'primary',
-        label: 'Business',
+        label: 'Nutrición',
       },
       {
         color: 'warning',
-        label: 'Family',
-      },
-      {
-        color: 'success',
-        label: 'Holiday',
-      },
-      {
-        color: 'info',
-        label: 'ETC',
+        label: 'Finanzas',
       },
     ],
-    selectedCalendars: ['Personal', 'Business', 'Family', 'Holiday', 'ETC'],
+    selectedCalendars: ['Psicología', 'Nutrición', 'Finanzas'],
   },
   getters: {},
   mutations: {

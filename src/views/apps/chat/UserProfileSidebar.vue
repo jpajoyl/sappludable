@@ -38,7 +38,7 @@
 
       <!-- About -->
       <h6 class="section-label mb-1">
-        About
+        Descripción
       </h6>
       <div class="about-user">
         <b-form-textarea
@@ -50,7 +50,7 @@
 
       <!-- Status -->
       <h6 class="section-label mb-1 mt-3">
-        Status
+        Estado
       </h6>
       <b-form-radio-group
         id="user-status-options"
@@ -70,7 +70,7 @@
 
       <!-- Settings -->
       <h6 class="section-label mb-1 mt-2">
-        Settings
+        Ajustes
       </h6>
       <ul
         v-if="profileUserData.settings"
@@ -78,20 +78,20 @@
       >
 
         <!-- Two Step Auth -->
-        <li class="d-flex justify-content-between align-items-center mb-1">
+<!--        <li class="d-flex justify-content-between align-items-center mb-1">
           <div class="d-flex align-items-center">
             <feather-icon
               icon="CheckSquareIcon"
               size="18"
               class="mr-75"
             />
-            <span class="align-middle">Two-step Verification</span>
+            <span class="align-middle">Verificacion en 2 pasos</span>
           </div>
           <b-form-checkbox
             v-model="profileUserData.settings.isTwoStepAuthVerificationEnabled"
             switch
           />
-        </li>
+        </li>-->
 
         <!-- Notifications -->
         <li class="d-flex justify-content-between align-items-center mb-1">
@@ -101,7 +101,7 @@
               size="18"
               class="mr-75"
             />
-            <span class="align-middle">Notification</span>
+            <span class="align-middle">Notificaciones</span>
           </div>
           <b-form-checkbox
             v-model="profileUserData.settings.isNotificationsOn"
@@ -110,38 +110,38 @@
         </li>
 
         <!-- Invite Friends -->
-        <li class="mb-1 d-flex align-items-center cursor-pointer">
+<!--        <li class="mb-1 d-flex align-items-center cursor-pointer">
           <feather-icon
             icon="UserIcon"
             class="mr-75"
             size="18"
           />
           <span class="align-middle">Invite Friends</span>
-        </li>
+        </li>-->
 
         <!-- Delete Account -->
-        <li class="d-flex align-items-center cursor-pointer">
+<!--        <li class="d-flex align-items-center cursor-pointer">
           <feather-icon
             icon="TrashIcon"
             class="mr-75"
             size="18"
           />
           <span class="align-middle">Delete Account</span>
-        </li>
+        </li>-->
       </ul>
 
-      <div class="mt-3">
+<!--      <div class="mt-3">
         <b-button variant="primary">
           Logout
         </b-button>
-      </div>
+      </div>-->
     </vue-perfect-scrollbar>
   </div>
 </template>
 
 <script>
 import {
-  BAvatar, BFormTextarea, BFormRadioGroup, BFormRadio, BFormCheckbox, BButton,
+  BAvatar, BFormTextarea, BFormRadioGroup, BFormRadio, BFormCheckbox,
 } from 'bootstrap-vue'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
@@ -152,7 +152,6 @@ export default {
     BFormRadioGroup,
     BFormRadio,
     BFormCheckbox,
-    BButton,
     VuePerfectScrollbar,
   },
   props: {
@@ -172,10 +171,10 @@ export default {
     }
 
     const userStatusOptions = [
-      { text: 'Active', value: 'online', radioVariant: 'success' },
-      { text: 'Do Not Disturb', value: 'busy', radioVariant: 'danger' },
-      { text: 'Away', value: 'away', radioVariant: 'warning' },
-      { text: 'Offline', value: 'offline', radioVariant: 'secondary' },
+      { text: 'Online', value: 'online', radioVariant: 'success' },
+      { text: 'No molestar', value: 'busy', radioVariant: 'danger' },
+      { text: 'Ausente', value: 'away', radioVariant: 'warning' },
+      { text: 'Desconectado', value: 'offline', radioVariant: 'secondary' },
     ]
 
     return {

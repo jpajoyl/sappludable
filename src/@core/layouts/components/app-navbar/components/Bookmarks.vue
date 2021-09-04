@@ -17,7 +17,7 @@
         :delay="{ show: 1000, hide: 50 }"
       />
     </b-nav-item>
-    <b-nav-item-dropdown
+<!--    <b-nav-item-dropdown
       link-classes="bookmark-star"
       lazy
       @hidden="resetsearchQuery"
@@ -29,8 +29,8 @@
         class="text-warning"
       />
 
-      <!-- Dropdown Content -->
-<!--      <li style="min-width:300px">
+      &lt;!&ndash; Dropdown Content &ndash;&gt;
+&lt;!&ndash;      <li style="min-width:300px">
         <div class="p-1">
           <b-form-input
             id="boomark-search-input"
@@ -75,15 +75,15 @@
           >
             No Results Found.
           </b-dropdown-item></vue-perfect-scrollbar>
-      </li>-->
-    </b-nav-item-dropdown>
+      </li>&ndash;&gt;
+    </b-nav-item-dropdown>-->
 
   </b-navbar-nav>
 </template>
 
 <script>
 import {
-  BNavbarNav, BNavItem, BTooltip, BNavItemDropdown,
+  BNavbarNav, BNavItem, BTooltip,
 } from 'bootstrap-vue'
 // import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import useAutoSuggest from '@core/components/app-auto-suggest/useAutoSuggest'
@@ -94,7 +94,7 @@ import searchAndBookmarkData from '../search-and-bookmark-data'
 
 export default {
   components: {
-    BNavbarNav, BNavItem, BTooltip, BNavItemDropdown,
+    BNavbarNav, BNavItem, BTooltip,
   },
   setup() {
     const searchAndBookmarkDataPages = ref(searchAndBookmarkData.pages)

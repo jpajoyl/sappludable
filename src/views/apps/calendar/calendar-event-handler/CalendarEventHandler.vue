@@ -15,7 +15,7 @@
         <!-- Header -->
         <div class="d-flex justify-content-between align-items-center content-sidebar-header px-2 py-1">
           <h5 class="mb-0">
-            {{ eventLocal.id ? 'Update': 'Add' }} Event
+            {{ eventLocal.id ? 'Actualizar': 'Agregar' }} Actividad
           </h5>
           <div>
             <feather-icon
@@ -53,7 +53,7 @@
               rules="required"
             >
               <b-form-group
-                label="Title"
+                label="Título"
                 label-for="event-title"
               >
                 <b-form-input
@@ -62,7 +62,7 @@
                   autofocus
                   :state="getValidationState(validationContext)"
                   trim
-                  placeholder="Event Title"
+                  placeholder="Título de la actividad"
                 />
 
                 <b-form-invalid-feedback>
@@ -79,7 +79,7 @@
             >
 
               <b-form-group
-                label="Calendar"
+                label="Categoría"
                 label-for="calendar"
                 :state="getValidationState(validationContext)"
               >
@@ -125,7 +125,7 @@
             >
 
               <b-form-group
-                label="Start Date"
+                label="Fecha de inicio"
                 label-for="start-date"
                 :state="getValidationState(validationContext)"
               >
@@ -148,7 +148,7 @@
             >
 
               <b-form-group
-                label="End Date"
+                label="Fecha fin"
                 label-for="end-date"
                 :state="getValidationState(validationContext)"
               >
@@ -171,7 +171,7 @@
                 switch
                 inline
               >
-                All Day
+                Todo el día
               </b-form-checkbox>
             </b-form-group>
 
@@ -183,7 +183,7 @@
             >
 
               <b-form-group
-                label="Event URL"
+                label="Link de la actividad"
                 label-for="event-url"
               >
                 <b-form-input
@@ -202,7 +202,7 @@
 
             <!-- Guests -->
             <b-form-group
-              label="Add Guests"
+              label="Añadir participantes"
               label-for="add-guests"
             >
               <v-select
@@ -236,20 +236,20 @@
 
             <!-- Location -->
             <b-form-group
-              label="Location"
+              label="Ubicación (Opcional)"
               label-for="event-location"
             >
               <b-form-input
                 id="event-location"
                 v-model="eventLocal.extendedProps.location"
                 trim
-                placeholder="Event Location"
+                placeholder="Localización de la actividad"
               />
             </b-form-group>
 
             <!-- Textarea -->
             <b-form-group
-              label="Description"
+              label="Descripción"
               label-for="event-description"
             >
               <b-form-textarea
@@ -266,14 +266,14 @@
                 class="mr-2"
                 type="submit"
               >
-                {{ eventLocal.id ? 'Update' : 'Add ' }}
+                {{ eventLocal.id ? 'Actualizar' : 'Añadir' }}
               </b-button>
               <b-button
                 v-ripple.400="'rgba(186, 191, 199, 0.15)'"
                 type="reset"
                 variant="outline-secondary"
               >
-                Reset
+                Limpiar
               </b-button>
             </div>
           </b-form>

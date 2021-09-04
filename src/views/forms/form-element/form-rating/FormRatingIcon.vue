@@ -1,19 +1,9 @@
 <template>
   <b-card-code
-    title="Icon"
+    :title='title'
   >
     <b-card-text>
-      <span>By default </span>
-      <code>&lt;b-form-rating&gt;</code>
-      <span> uses the Bootstrap Icons icons </span>
-      <code>'star', 'star-half', 'star-fill',</code>
-      <span> and the icon </span>
-      <code>'x'</code>
-      <span> (for the optional clear button). You can specify alternate Bootstrap Icons to use via the </span>
-      <code> icon-empty, icon-half, icon-full</code>
-      <span> and </span>
-      <code>icon-clear</code>
-      <span> props.</span>
+      <span>{{text}}</span>
     </b-card-text>
 
     <b-form-rating
@@ -42,10 +32,6 @@
         size="18"
       />
     </b-form-rating>
-
-    <template #code>
-      {{ codeIcon }}
-    </template>
   </b-card-code>
 </template>
 
@@ -60,6 +46,7 @@ export default {
     BFormRating,
     BCardText,
   },
+  props: ['text', 'title'],
   data() {
     return {
       codeIcon,
